@@ -52,10 +52,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
               onDoubleTap: () {
-                numDoubleTap++;
+                setState(() {
+                  numDoubleTap++;
+                });
               },
               onLongPress: () {
-                longPress++;
+                setState(() {
+                  longPress++;
+                });
               },
               // onVerticalDragUpdate: (DragUpdateDetails details) {
               //   setState(() {
